@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/your-repo-name/static/css/main.a1ac1e36.css",
-    "main.js": "/your-repo-name/static/js/main.72f2c564.js",
-    "static/js/453.6767c666.chunk.js": "/your-repo-name/static/js/453.6767c666.chunk.js",
-    "index.html": "/your-repo-name/index.html",
-    "main.a1ac1e36.css.map": "/your-repo-name/static/css/main.a1ac1e36.css.map",
-    "main.72f2c564.js.map": "/your-repo-name/static/js/main.72f2c564.js.map",
-    "453.6767c666.chunk.js.map": "/your-repo-name/static/js/453.6767c666.chunk.js.map"
+    "main.css": "/Blog-Website-ReactJs/static/css/main.a1ac1e36.css",
+    "main.js": "/Blog-Website-ReactJs/static/js/main.8c3dd428.js",
+    "static/js/453.6767c666.chunk.js": "/Blog-Website-ReactJs/static/js/453.6767c666.chunk.js",
+    "index.html": "/Blog-Website-ReactJs/index.html",
+    "main.a1ac1e36.css.map": "/Blog-Website-ReactJs/static/css/main.a1ac1e36.css.map",
+    "main.8c3dd428.js.map": "/Blog-Website-ReactJs/static/js/main.8c3dd428.js.map",
+    "453.6767c666.chunk.js.map": "/Blog-Website-ReactJs/static/js/453.6767c666.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1ac1e36.css",
-    "static/js/main.72f2c564.js"
+    "static/js/main.8c3dd428.js"
   ]
 }
