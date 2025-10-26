@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+}
+
+.hover-underline-pointer:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
