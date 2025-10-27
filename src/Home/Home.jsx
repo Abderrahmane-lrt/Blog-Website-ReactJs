@@ -1,23 +1,22 @@
 // import { useState, useEffect } from "react";
 
 // import { useEffect, useState } from "react";
-import Logo from "../Components/Logo";
 import Article from "../Components/Article";
 import ArticleColumn from "../Components/ArticleColumn";
 
+import Logo from "../Components/Logo";
 import CurrentDate from "../Components/CurrentDate";
 import Navbar from "../Components/Navbar";
-import Loading from "../Components/Loading";
 import Footer from "../Components/Footer";
+import Loading from "../Components/Loading";
 
 // import { useNavigate } from "react-router-dom";
+//   const navigate = useNavigate();
 
 function Home({ news, loading, errors }) {
 
 
-  //   const navigate = useNavigate();
 
-  const image = '/logo.png'
 
 
   return (
@@ -28,64 +27,43 @@ function Home({ news, loading, errors }) {
         <div>
           <div className="d-flex justify-content-between">
             <CurrentDate />
-            <span className="text-secondary pt-3 pe-4 pb-0"><i class="bi bi-list"></i> Menu  </span>
+            <p className="text-dark fw-bolder pt-3 pe-4 pb-0">
+              <i class="bi bi-1-circle"></i>
+            </p>
           </div>
 
           <Logo />
           <Navbar />
           <main >
-            <section>
-              <div className="row g-4">
-               
-                  <div
-                    className={`col-lg-6} `}
-                  >
-                    <div
-                      className="card text-white border-0 h-100"
-                      style={{
-                        backgroundImage:  `url(})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        borderRadius: "15px",
-                        overflow: "hidden",
-                      }}
-                    >
-                      <div
-                        className="card-img-overlay d-flex flex-column justify-content-end p-3"
-                        style={{
-                          background:
-                            "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
-                        }}
-                      >
-                        <span
-                          className="badge bg-warning text-dark mb-2"
-                          style={{ width: "fit-content" }}
-                        >
-                        </span>
-                        <h5 className="card-title fw-bold"></h5>
-                        <p className="card-text small text-muted">
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                
-              </div>
+            <section style={{ paddingBottom: "100px", paddingTop: "50px" }}>
+              <div className="container row ps-5 align-items-center">
+                <div className="col-12 col-md-6 mb-3 mb-md-0">
+                  <img src="/home.jpg" alt="" width="100%" className="" />
+                </div>
 
+                <div className="col-12 col-md-6">
+                  <h2 className="fw-bold pt-3 pb-3">Google continues to innovate in artificial intelligence</h2>
+                  <p className="text-secondary" style={{ fontSize: '1.1em' }}>
+                    Google continues to innovate in artificial intelligence, cloud computing,
+                    and web technologies. From enhancing search capabilities with generative AI
+                    to expanding open-source tools, the company remains a leader shaping the
+                    digital landscape. This article explores how Google's latest projects are
+                    redefining productivity and online experiences.
+                  </p>
+                </div>
+              </div>
             </section>
+
+
             <h4 className="d-flex justify-content-center align-items-center position-relative ms-5 pb-2 ps-4 mt-4 mb-4">
               <span className="position-absolute start-0 ">/ <i class="bi bi-house-fill"></i></span>
               <h4 className="text-dark">Latest News & Articles</h4>
 
             </h4>
             <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                flexWrap: "wrap",
-                gap: "20px",
-              }}
+              className="cards-container"
             >
-              {news.slice(0, 6).map((article, index) => (
+              {news.slice(30, 36).map((article, index) => (
                 <Article key={index} article={article} />
               ))}
             </div>
@@ -103,6 +81,8 @@ function Home({ news, loading, errors }) {
                 <ArticleColumn key={index} article={article} />
               ))}
             </div>
+
+            <img src="" alt="" />
 
 
           </main>

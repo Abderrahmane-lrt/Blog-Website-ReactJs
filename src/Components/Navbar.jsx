@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <ul class="nav justify-content-center  ">
+    <ul class="nav justify-content-center ">
       <li className="nav-item">
         <Link to="/" className="nav-link fw-bold hover-underline-pointer  text-dark">Home</Link>
       </li>

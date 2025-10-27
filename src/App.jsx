@@ -5,9 +5,12 @@ import Home from "./Home/Home";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Trends from "./Components/Trends";
+import PageNotFound from "./Components/PageNotFound";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Google from "./Components/GoogleNews";
+import GoogleNews from "./Components/GoogleNews";
+import ArticleDetail from "./Components/ArticleDetail";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -40,12 +43,15 @@ function App() {
 
   return <>
   <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home news={news} errors={errors}  loading={loading} />}> </Route>
-      <Route path="/Google" element={<Google news={news} />}> </Route>
-      <Route path="/trends" element={<Trends news={news} />}> </Route>
+      <Route path="/Google" element={<GoogleNews news={news} loading={loading}  />}> </Route>
+      <Route path="/trends" element={<Trends news={news} loading={loading} />}> </Route>
       <Route path="/about" element={<About />}> </Route>
       <Route path="/contact" element={<Contact />}> </Route>
+      <Route path="/article-detail" element={<ArticleDetail />}> </Route>
+      <Route path="*" element={<PageNotFound  />}> </Route>
     </Routes>
   
   </BrowserRouter>

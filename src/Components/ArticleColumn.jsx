@@ -18,7 +18,7 @@ const ArticleColumn = ({ article }) => {
                             onMouseEnter={(e) => (e.target.style.textDecoration = "underline")}
                             onMouseLeave={(e) => (e.target.style.textDecoration = "none")}
                         >
-                            {article.title}
+                           <a href={article.url}>{article.title}</a> 
                         </h5>
                         <p className="card-text">{article.description}</p>
                         <p className="card-text">
