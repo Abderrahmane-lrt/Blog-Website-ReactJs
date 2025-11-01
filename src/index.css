@@ -34,6 +34,17 @@ main {
     flex-direction: column;
     align-items: center; 
   }
+.search-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.search-section > span{
+  padding-bottom: 22px;
+  padding-left: 2px;
+}
 }
 
 

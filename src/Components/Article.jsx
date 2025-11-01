@@ -5,8 +5,6 @@ const Article = ({ article }) => {
 
   const handleClick = () => {
     navigate('/article-detail', { state: { article } })
-
-
   }
   return (
     <div

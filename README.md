@@ -1,8 +1,65 @@
-# Getting Started with Create React App
+# TechNews Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React blog application that fetches and displays news articles. Features include search functionality, article details, and multiple news categories.
 
-## Available Scripts
+## 🚀 Quick Start
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/YOUR_USERNAME/blog.git
+cd blog
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create a `.env` file in the root directory:
+```
+REACT_APP_NEWS_API_KEY=your_api_key_here
+```
+
+Get your free API key from [NewsAPI](https://newsapi.org)
+
+4. Start the development server:
+```bash
+npm start
+```
+
+The app will open at [http://localhost:3000](http://localhost:3000)
+
+## 📋 Features
+
+- 📰 Latest news articles from multiple sources
+- 🔍 Search functionality by article title
+- 📱 Responsive design
+- 🎨 Modern UI with Bootstrap icons
+- ⚡ Fast and optimized performance
+
+## 🌐 Deployment
+
+### Deploy to GitHub Pages
+
+⚠️ **Important**: NewsAPI's free tier only works on localhost. For production deployment, you'll need to use one of the solutions mentioned in [DEPLOYMENT.md](DEPLOYMENT.md).
+
+1. Update `package.json` homepage URL:
+```json
+"homepage": "https://YOUR_USERNAME.github.io/blog"
+```
+
+2. Deploy:
+```bash
+npm run deploy
+```
+
+3. Enable GitHub Pages in repository settings (Settings → Pages)
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
+## 📖 Available Scripts
 
 In the project directory, you can run:
 

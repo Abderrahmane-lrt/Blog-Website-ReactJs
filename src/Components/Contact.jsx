@@ -19,7 +19,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Message sent successfully! Thank you for reaching out.");
+        alert("Message sent successfully! Thank you .");
         setFormData({ name: "", email: "", message: "" });
     };
     return (
